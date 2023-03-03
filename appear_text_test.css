@@ -1,0 +1,57 @@
+.ml6 {
+ z-index: 100;
+  position: absolute;
+  color: white;
+  font-size: 50px;
+  font-weight: lighter;
+  left: 420px;
+  top: 180px;
+font-family: 'Monospace';
+/*font-family:'Avant Garde';*/
+}
+
+.ml6 .text-wrapper {
+  position: relative;
+  display: inline-block;
+  padding-top: 0.2em;
+  padding-right: 0.05em;
+  padding-bottom: 0.1em;
+  overflow: hidden;
+  
+}
+
+.ml6 .letter {
+  display: inline-block;
+  line-height: 1em;
+  /*font-family:'Avant Garde';*/
+}
+
+@media (max-width: 768px) {
+  .ml6 {
+  z-index: 100;
+  position: absolute;
+  color: white;
+  font-size: 13px; /* decrease the font size */
+  font-weight: lighter;
+  left: 50%; /* center the text horizontally */
+  transform: translateX(-50%); /* center the text horizontally */
+  top: 50%; /* center the text vertically */
+  transform: translateY(-50%); /* center the text vertically */
+  text-align: center; /* center the text horizontally */
+  font-family: 'Monospace';
+}
+
+.ml6 .text-wrapper {
+  position: relative;
+  display: inline-block;
+  padding-top: 0.2em;
+  padding-right: 0.05em;
+  padding-bottom: 0.1em;
+  overflow: hidden;
+}
+
+.ml6 .letter {
+  display: inline-block;
+  line-height: 1em;
+}
+}
