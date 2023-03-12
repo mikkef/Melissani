@@ -19,7 +19,9 @@
   height: 60px;
   position:absolute;
   top:50px;
-z-index:999;
+  z-index:999;
+   display: flex;
+  justify-content: center;
 }
 
 .menu2_independent{
@@ -29,6 +31,8 @@ z-index:999;
   align-items: center;
   list-style: none;
   padding: 0 100px;
+  display: flex;
+  justify-content: center;
 }
 
 .menu2_independent li {
