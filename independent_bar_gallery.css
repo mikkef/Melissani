@@ -21,7 +21,7 @@
   height: 60px;
   position:relativ;
  /* padding-left:357px;*/
-  padding-left:25%;
+/*  padding-left:25%;*/
  /* top:50px;*/
 /*z-index:999;*/
 }
@@ -31,8 +31,9 @@
   width: 100%;
   display: flex;
   align-items: center;
+  justify-content:center;
   list-style: none;
-  padding: 0 100px;
+  /*padding: 0 100px;*/
 
 
 }
