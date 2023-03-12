@@ -94,8 +94,11 @@ z-index: -10;
 }
 
 .container_box{
-position: relative;
-padding-right:100px;
-padding-left:110px;
-padding-bottom:190px;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+//padding-right:100;
+//padding-left:110px;
+  padding-bottom:60px;
 }
