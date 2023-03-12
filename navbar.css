@@ -4,14 +4,16 @@
   box-sizing: border-box;
 }
 
-.container {
-  overflow: hidden;
+.container_nav {
+    overflow: hidden;
 /*  width: 90;
   height: 100vh;*/
-  /*background: #4776e6;
-  background: -webkit-linear-gradient(to right, #8e54e9, #4776e6);
+  /*background: #4776e6;*/
+  /*background: -webkit-linear-gradient(to right, #8e54e9, #4776e6);
   background: linear-gradient(to right, #8e54e9, #4776e6);*/
   display: flex;
+  align-items: center;
+justify-content: center;
 }
 
 
