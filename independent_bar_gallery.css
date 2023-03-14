@@ -127,6 +127,20 @@ opacity:50%;
   background:white;
 }
 
+@media screen and (max-width: 767px) {
+  .header3_independent,
+  .menu3_independent {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container_gallery_media {
+    display:none;
+  }
+}
+
+
 /*.menu3_independent li:first-child::before,
 .menu3_independent li:first-child::after {
   width: 100%;
