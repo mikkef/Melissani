@@ -11,6 +11,19 @@
    
 }
 
+.logo_media {
+  width: 20%;
+   height: 20%;
+  display: block;
+  margin: 0 auto;
+  position: absolute;
+  top: 22%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 100;
+   
+}
+
 .dropdown_logo {
    width: 140px;
    height: 120px;
@@ -496,5 +509,11 @@ padding-left:43%;
 @media screen and (max-width: 768px) {
   .content_title_gallery {
     display:none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .dropdown_logo {
+    display: none;
   }
 }
