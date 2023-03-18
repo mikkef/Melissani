@@ -14,19 +14,19 @@ font-family: 'Monospace';
 }
 
 .ml6_media {
- z-index: 100;
+  z-index: 100;
   position: absolute;
   color: white;
   font-size: 70%;
   font-weight: lighter;
   left: 0%;
-  //right:50%;
+  /* right: 50%; */ /* Remove this line */
   top: 12%;
-  display:flex;
-  align-items: center;
-  justify-content:center;
-font-family: 'Monospace';
-/*font-family:'Avant Garde';*/
+  display: flex;
+  justify-content: center;
+  text-align: center; /* Add this line */
+  font-family: 'Monospace';
+  /* font-family:'Avant Garde'; */
 }
 
 .ml6 .text-wrapper {
