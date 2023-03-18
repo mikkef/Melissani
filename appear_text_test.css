@@ -21,7 +21,7 @@ font-family: 'Monospace';
   font-weight: lighter;
   left: 10%;
   /* right: 50%; */ /* Remove this line */
-  top: 12%;
+  top: 14%;
   display: flex;
   justify-content: center;
   text-align: center; /* Add this line */
