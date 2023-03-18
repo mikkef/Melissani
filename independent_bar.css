@@ -109,3 +109,35 @@ z-index:999;
 /*Style 4  */
 /* Before Hover: All border except the bottom border is transparent */
 /* On Hover: All border except bottom border is changed to white */
+
+
+
+@media (max-width: 768px) {
+  .dropdown_container {
+    display: block;
+  }
+}
+/* This will hide the element on screens larger than 768 pixels */
+@media (min-width: 769px) {
+  .dropdown_container {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .dropdown_container {
+     position: fixed;
+    top: 3%;
+    left: 83%;
+    z-index:10000000000000;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #navbar {
+    display: none;
+  }
+  .hide_bar_in_mobile{
+	 display: none;
+  }
+}
