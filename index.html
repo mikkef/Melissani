@@ -707,6 +707,17 @@ L.tileLayer(
   }).addTo(map);
   //////////////////////////OPENSTREET-MAP BASEMAP UNCOMMENT TO ALLOW//////////////////////////
 
+var kefaloniaBounds = L.latLngBounds(
+		L.latLng(38.0302, 20.2354), // Southwest corner
+		L.latLng(38.4574, 20.8369)  // Northeast corner
+	);
+
+	// Restrict the map to the bounds of Kefalonia
+	map.setMaxBounds(kefaloniaBounds);
+	map.on('drag', function() {
+		map.panInsideBounds(kefaloniaBounds, { animate: false });
+	});
+
 // add a marker in the given location
 L.marker(center).addTo(map);
 L.marker([38.1674996, 20.4924299]).addTo(map).bindPopup('<br>Hello, We are the Triantos family and we are happy to show you around!</br><br> Move your mouse over the labels to find information and a picture for each of our favourite places to visit in Kefalonia. </br> <br>Click to zoom to location. </br>')
