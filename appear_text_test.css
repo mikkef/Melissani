@@ -75,13 +75,13 @@ font-family: 'Monospace';
   z-index: 100;
   position: absolute;
   color: white;
-  font-size: 13px; /* decrease the font size */
+  font-size: 13px;
   font-weight: lighter;
-  left: 50%; /* center the text horizontally */
-  transform: translateX(-50%); /* center the text horizontally */
-  top: 50%; /* center the text vertically */
-  transform: translateY(-50%); /* center the text vertically */
-  text-align: center; /* center the text horizontally */
+  left: 50%;
+  transform: translateX(-50%);
+  top: 50%;
+  transform: translateY(-50%);
+  text-align: center;
   font-family: 'Monospace';
 }
 
