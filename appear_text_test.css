@@ -106,9 +106,12 @@ font-family: 'Monospace';
   }
 }
 
-/*@media screen and (max-width: 480px) {
+@media screen and (max-width: 480px) {
   .ml6 {
     display: none;
   }
+.ml6_media {
+    display: none;
+  }
 }
-*/
+
