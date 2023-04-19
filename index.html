@@ -736,14 +736,18 @@ L.marker([38.1674996, 20.4924299]).addTo(map).bindPopup('<br>Hello, We are the T
 //L.marker(center).addTo(map);
 //L.marker([38.3760017,20.5385741]).addTo(map).on('mouseover', onMouseover).on('mouseout', onMouseout).on('click', onClick).bindPopup('This is Assos Beach. Small pebble beach with clear, calm waters & a picturesque harbor with open-air tavernas.');
 
+var beachIcon = L.icon({
+    iconUrl: "https://img.icons8.com/external-smashingstocks-circular-smashing-stocks/1x/external-Beach-nature-landscape-smashingstocks-circular-smashing-stocks-2.png",
+    iconSize:     [35, 35], // size of the icon
+});
 //fiscardo beach
 var imageUrl = "C:\Users\mikke\Desktop\Τριάντος_Νοικιαζόμενα\wheretostayinkefalonia.jpg";
 L.marker(center).addTo(map);
-L.marker([38.4595136,20.5720551]).addTo(map).on('mouseover', onMouseover).on('mouseout', onMouseout).on('click', onClick).bindPopup("Fiscardo Beach is easily accessed within a five minute drive from the busy village of Fiscardo. Foki is one of the most picturesque spots in Kefalonia known for its dreamy landscape with olive tree forests that come down to the beach and offer natural shade. It is the home to many seals and the reason that it was named that way. The area consists of small strips of pebbles with a stunning view to the crystal clear waters. On the right side of the beach, a beautiful path leads to uncountable caves and coves that captivates all visitors. There are no tourist facilities but the natural landscape offers relaxing and peaceful moments. Right above the beach is a little fish tavern. The beach is a much preferred destination for private yachts. <img src='https://www.greeka.com/village_beach/photos/829/foki-fiskardo-top-1-1280.jpg'/>");
+L.marker([38.4595136,20.5720551],{icon: beachIcon}).addTo(map).on('mouseover', onMouseover).on('mouseout', onMouseout).on('click', onClick).bindPopup("Fiscardo Beach is easily accessed within a five minute drive from the busy village of Fiscardo. Foki is one of the most picturesque spots in Kefalonia known for its dreamy landscape with olive tree forests that come down to the beach and offer natural shade. It is the home to many seals and the reason that it was named that way. The area consists of small strips of pebbles with a stunning view to the crystal clear waters. On the right side of the beach, a beautiful path leads to uncountable caves and coves that captivates all visitors. There are no tourist facilities but the natural landscape offers relaxing and peaceful moments. Right above the beach is a little fish tavern. The beach is a much preferred destination for private yachts. <img src='https://www.greeka.com/village_beach/photos/829/foki-fiskardo-top-1-1280.jpg'/>");
 //.on('click', onClick)
 //myrtos beach
 L.marker(center).addTo(map);
-L.marker([38.3468638,20.5252942]).addTo(map).on('mouseover', onMouseover).on('mouseout', onMouseout).on('click', onClick).bindPopup("This is Myrtos Beach. Picturesque, secluded & undeveloped white-sand beach surrounded by sheer limestone cliffs. <img src='https://dynamic-media-cdn.tripadvisor.com/media/photo-o/18/4c/29/d0/photo0jpg.jpg?w=1200&h=-1&s=1'/>");
+L.marker([38.3468638,20.5252942],{icon: beachIcon}).addTo(map).on('mouseover', onMouseover).on('mouseout', onMouseout).on('click', onClick).bindPopup("This is Myrtos Beach. Picturesque, secluded & undeveloped white-sand beach surrounded by sheer limestone cliffs. <img src='https://dynamic-media-cdn.tripadvisor.com/media/photo-o/18/4c/29/d0/photo0jpg.jpg?w=1200&h=-1&s=1'/>");
 
 //moni agiou gerosimou
 L.marker(center).addTo(map);
@@ -764,11 +768,11 @@ L.marker([38.1748115,20.4937953]).addTo(map).on('mouseover', onMouseover).on('mo
 
 //makris gyalos
 L.marker(center).addTo(map);
-L.marker([38.1516325,20.4797192]).addTo(map).on('mouseover', onMouseover).on('mouseout', onMouseout).on('click', onClick).bindPopup("This is Makris Giaolos. A sandy stretch of beach featuring calm aqua water, scenic views & comfy lounge chairs for rent.<br><img src='https://www.greekboston.com/wp-content/uploads/2017/07/Makris-Gialos-Beach-Kefalonia.jpg'/>");
+L.marker([38.1516325,20.4797192],{icon: beachIcon}).addTo(map).on('mouseover', onMouseover).on('mouseout', onMouseout).on('click', onClick).bindPopup("This is Makris Giaolos. A sandy stretch of beach featuring calm aqua water, scenic views & comfy lounge chairs for rent.<br><img src='https://www.greekboston.com/wp-content/uploads/2017/07/Makris-Gialos-Beach-Kefalonia.jpg'/>");
 
 //Paralia Xi
 L.marker(center).addTo(map);
-L.marker([38.1609161,20.4239988]).addTo(map).on('mouseover', onMouseover).on('mouseout', onMouseout).on('click', onClick).bindPopup("Xi is renowned for its soft, red sand. It is a Blue Flag beach.The sand slopes reasonably gently so that one can go out a distance from the shoreline.<br><img src='https://exploringgreece.tv/wp-content/uploads/2020/06/%CF%80%CE%B1%CF%81%CE%B1%CE%BB%CE%AF%CE%B1-%CE%9E%CE%B9.jpg'/>");
+L.marker([38.1609161,20.4239988],{icon: beachIcon}).addTo(map).on('mouseover', onMouseover).on('mouseout', onMouseout).on('click', onClick).bindPopup("Xi is renowned for its soft, red sand. It is a Blue Flag beach.The sand slopes reasonably gently so that one can go out a distance from the shoreline.<br><img src='https://exploringgreece.tv/wp-content/uploads/2020/06/%CF%80%CE%B1%CF%81%CE%B1%CE%BB%CE%AF%CE%B1-%CE%9E%CE%B9.jpg'/>");
 
 //Limani Porou Kefalonias
 L.marker(center).addTo(map);
@@ -788,11 +792,11 @@ L.marker([38.2667038,20.1184052]).addTo(map).on('mouseover', onMouseover).on('mo
 
 //Paralia Petanoi
 L.marker(center).addTo(map);
-L.marker([38.2624156,20.3450875]).addTo(map).on('mouseover', onMouseover).on('mouseout', onMouseout).on('click', onClick).bindPopup("Petani is a magnificent beach located at a distance of 35 km west of Argostoli, the capital of Kefalonia, in the beautiful peninsula of Paliki. It consists of blue crystal waters and a stunning landscape of huge verdant cliffs that reach the blue sea. The water deepens right away and there are usually big waves in Petani. The beach is covered mostly with sand and some pebbles scattered along the shore. Close to the beach are a couple of taverns that will draw your attention. The beach is partially organized with umbrellas and sundecks..<br><img src='https://media-cdn.tripadvisor.com/media/photo-s/10/74/8d/a7/caption.jpg'/>");
+L.marker([38.2624156,20.3450875],{icon: beachIcon}).addTo(map).on('mouseover', onMouseover).on('mouseout', onMouseout).on('click', onClick).bindPopup("Petani is a magnificent beach located at a distance of 35 km west of Argostoli, the capital of Kefalonia, in the beautiful peninsula of Paliki. It consists of blue crystal waters and a stunning landscape of huge verdant cliffs that reach the blue sea. The water deepens right away and there are usually big waves in Petani. The beach is covered mostly with sand and some pebbles scattered along the shore. Close to the beach are a couple of taverns that will draw your attention. The beach is partially organized with umbrellas and sundecks..<br><img src='https://media-cdn.tripadvisor.com/media/photo-s/10/74/8d/a7/caption.jpg'/>");
 
 //Paralia Lourdata
 L.marker(center).addTo(map);
-L.marker([38.1211383,20.5817139]).addTo(map).on('mouseover', onMouseover).on('mouseout', onMouseout).on('click', onClick).bindPopup("In the southern part of Kefalonia, in the picturesque village of Lourdata, hidden and embraced by lush vegetation, is the beach of Lourdas. The slopes of Mount Ainos will be the backdrop for your dives, in a colorful landscape unlike any other.The beach is organized with deckchairs, umbrellas and facilities for water sports. If you fancy a coffee or a snack, you will find bars, taverns and mini markets at your disposal. At sunset, the horizon is painted with all shades of red and resembles a painting, offering an amazing view that reaches as far as the island of Zakynthos!.<br><img src='https://certs-it.com/wp-content/uploads/2019/02/lourdas-beach_kefalonia_certs-it_04.jpeg'/>");
+L.marker([38.1211383,20.5817139],{icon: beachIcon}).addTo(map).on('mouseover', onMouseover).on('mouseout', onMouseout).on('click', onClick).bindPopup("In the southern part of Kefalonia, in the picturesque village of Lourdata, hidden and embraced by lush vegetation, is the beach of Lourdas. The slopes of Mount Ainos will be the backdrop for your dives, in a colorful landscape unlike any other.The beach is organized with deckchairs, umbrellas and facilities for water sports. If you fancy a coffee or a snack, you will find bars, taverns and mini markets at your disposal. At sunset, the horizon is painted with all shades of red and resembles a painting, offering an amazing view that reaches as far as the island of Zakynthos!.<br><img src='https://certs-it.com/wp-content/uploads/2019/02/lourdas-beach_kefalonia_certs-it_04.jpeg'/>");
 
 
 
@@ -821,6 +825,8 @@ var icecreamIcon = L.icon({
     iconUrl: "https://cdn-icons-png.flaticon.com/128/4614/4614978.png",
     iconSize:     [35, 35], // size of the icon
 });
+
+
 
 
 //Palia Plaka
