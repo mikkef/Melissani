@@ -45,20 +45,7 @@
   justify-content: center;
 }
 
-/*.container2 {
-  max-width: 80%; /* Set a maximum width for the container */
-  padding-top: 65px;
-  padding-bottom: 1px;
-  display: flex;
-  align-items: center;
-  text-align: center;
-  justify-content: center;
-}*/
 
-/*.container2 img {
-  width: 100%; /* Set the width of the image to 100% of its parent container */
-  height: auto; /* Allow the height to adjust proportionally based on the image width */
-}*/
 .container2{
 padding-top: 65px;
 padding-bottom:1px;
