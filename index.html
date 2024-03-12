@@ -865,7 +865,7 @@ L.marker([38.1731304,20.4926318], {icon: icecreamIcon}).addTo(map).bindPopup("Ka
 
 function onClick(e) {
    // alert(this.e.latlng());
-	map.setView(new L.LatLng(e.latlng.lat, e.latlng.lng), 17);
+	map.setView(new L.LatLng(e.latlng.lat, e.latlng.lng));
         this.openPopup();
 	
 }
