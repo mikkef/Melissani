@@ -81,7 +81,6 @@
 /* is animated here by increasing the height of before element from 0 to 80% and width of after */
 /* element from 0 to 120% */
 
-
 /* Style 3 */
 /* Before hover: After element's top and left borders are set, same as before elements's */
 /* right and bottom borders, width and height of both elements are set to 0% */
@@ -738,7 +737,7 @@ L.marker([38.1674996, 20.4924299]).addTo(map).bindPopup('<br>Hello, We are the T
 
 //this is ronda
 //L.marker(center).addTo(map);
-//L.marker([38.3760017,20.5385741]).addTo(map).on('mouseover', onMouseover).on('mouseout', onMouseout).on('click', onClick).bindPopup('This is Assos Beach. Small pebble beach with clear, calm waters & a picturesque harbor with open-air tavernas.');
+//L.marker([38.3760017,20.5385741]).addTo(map).on('mouseover', onMouseover).on('mouseout', onMouseout).on('click', onClick).bindPopup('This is Assos Beach. Small pebble beach with clear, calm waters & a picturesque harbor with open-air tavernas.').on('click', onClick);
 
 var beachIcon = L.icon({
     iconUrl: "https://img.icons8.com/external-smashingstocks-flat-smashing-stocks/256/external-beach-summer-party-smashingstocks-flat-smashing-stocks.png",
@@ -747,60 +746,60 @@ var beachIcon = L.icon({
 //fiscardo beach
 //var imageUrl = "C:\Users\mikke\Desktop\Τριάντος_Νοικιαζόμενα\wheretostayinkefalonia.jpg";
 L.marker(center).addTo(map);
-L.marker([38.4595136,20.5720551],{icon: beachIcon}).addTo(map).on('mouseover', onMouseover).on('mouseout', onMouseout).on('click', onClick).bindPopup("Fiscardo Beach is easily accessed within a five minute drive from the busy village of Fiscardo. Foki is one of the most picturesque spots in Kefalonia known for its dreamy landscape with olive tree forests that come down to the beach and offer natural shade. It is the home to many seals and the reason that it was named that way. The area consists of small strips of pebbles with a stunning view to the crystal clear waters. On the right side of the beach, a beautiful path leads to uncountable caves and coves that captivates all visitors. There are no tourist facilities but the natural landscape offers relaxing and peaceful moments. Right above the beach is a little fish tavern. The beach is a much preferred destination for private yachts. <img src='https://www.greeka.com/village_beach/photos/829/foki-fiskardo-top-1-1280.jpg'/>");
+L.marker([38.4595136,20.5720551],{icon: beachIcon}).addTo(map).bindPopup("Fiscardo Beach is easily accessed within a five minute drive from the busy village of Fiscardo. Foki is one of the most picturesque spots in Kefalonia known for its dreamy landscape with olive tree forests that come down to the beach and offer natural shade. It is the home to many seals and the reason that it was named that way. The area consists of small strips of pebbles with a stunning view to the crystal clear waters. On the right side of the beach, a beautiful path leads to uncountable caves and coves that captivates all visitors. There are no tourist facilities but the natural landscape offers relaxing and peaceful moments. Right above the beach is a little fish tavern. The beach is a much preferred destination for private yachts. <img src='https://www.greeka.com/village_beach/photos/829/foki-fiskardo-top-1-1280.jpg'/>").on('click', onClick);
 //.on('click', onClick)
 //myrtos beach
 L.marker(center).addTo(map);
-L.marker([38.3468638,20.5252942],{icon: beachIcon}).addTo(map).on('mouseover', onMouseover).on('mouseout', onMouseout).on('click', onClick).bindPopup("This is Myrtos Beach. Picturesque, secluded & undeveloped white-sand beach surrounded by sheer limestone cliffs. <img src='https://dynamic-media-cdn.tripadvisor.com/media/photo-o/18/4c/29/d0/photo0jpg.jpg?w=1200&h=-1&s=1'/>");
+L.marker([38.3468638,20.5252942],{icon: beachIcon}).addTo(map).bindPopup("This is Myrtos Beach. Picturesque, secluded & undeveloped white-sand beach surrounded by sheer limestone cliffs. <img src='https://dynamic-media-cdn.tripadvisor.com/media/photo-o/18/4c/29/d0/photo0jpg.jpg?w=1200&h=-1&s=1'/>").on('click', onClick);
 
 //moni agiou gerosimou
 L.marker(center).addTo(map);
-L.marker([38.1636315,20.5837162]).addTo(map).on('mouseover', onMouseover).on('mouseout', onMouseout).on('click', onClick).bindPopup("Sacred Monastery of Agios Gerasimos of Kefalonia. In 1560, Saint Gerasimos founded a nunnery in the valley of Omala, central Kefalonia, and called it the New Jerusalem The monastery is situated under the imposing Mount Ainos and near the villages of Fragata and Valsamata. Today the monastery has been reconstructed. It is an imposing building with a newly built church. Beneath the monastery, there is a cave with two rooms which used to be the home of the Saint. The only way to access this cave is by a large hole.<br> <img src='https://www.greeka.com/seedo/photos/131/kefalonia-agios-gerasimos-monastery-top-2-1280.jpg'/>");
+L.marker([38.1636315,20.5837162]).addTo(map).bindPopup("Sacred Monastery of Agios Gerasimos of Kefalonia. In 1560, Saint Gerasimos founded a nunnery in the valley of Omala, central Kefalonia, and called it the New Jerusalem The monastery is situated under the imposing Mount Ainos and near the villages of Fragata and Valsamata. Today the monastery has been reconstructed. It is an imposing building with a newly built church. Beneath the monastery, there is a cave with two rooms which used to be the home of the Saint. The only way to access this cave is by a large hole.<br> <img src='https://www.greeka.com/seedo/photos/131/kefalonia-agios-gerasimos-monastery-top-2-1280.jpg'/>").on('click', onClick);
 
 //agia effimia
 L.marker(center).addTo(map);
-L.marker([38.3016794,20.5960347]).addTo(map).on('mouseover', onMouseover).on('mouseout', onMouseout).on('click', onClick).bindPopup("Agia Effimia is a village on the east coast of the island of Kefalonia in Greece. It was the seat of the former Pylaros municipality. It is a traditional fishing village centred on a small harbour. <br> <img src='https://content.tui.co.uk/adamtui/2017_3/2_10/852b753e-b984-428f-8420-a72a00a95ce6/shutterstock_271777058WebOriginalCompressed.jpg?i10c=img.resize(width:658);img.crop(width:658%2Cheight:370)'/>");
+L.marker([38.3016794,20.5960347]).addTo(map).bindPopup("Agia Effimia is a village on the east coast of the island of Kefalonia in Greece. It was the seat of the former Pylaros municipality. It is a traditional fishing village centred on a small harbour. <br> <img src='https://content.tui.co.uk/adamtui/2017_3/2_10/852b753e-b984-428f-8420-a72a00a95ce6/shutterstock_271777058WebOriginalCompressed.jpg?i10c=img.resize(width:658);img.crop(width:658%2Cheight:370)'/>").on('click', onClick);
 
 //lassi
 L.marker(center).addTo(map);
-L.marker([38.1639919,20.4826267]).addTo(map).on('mouseover', onMouseover).on('mouseout', onMouseout).on('click', onClick).bindPopup("Lassi is a laid-back resort village known for its scenic beaches, popular in summer for sunbathing and water sports in a crystalline bay. To the west, quiet stretches of white sand flank the Lassi Caves.<br> <img src='https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1b/7e/66/62/caption.jpg?w=300&h=300&s=1'/>");
+L.marker([38.1639919,20.4826267]).addTo(map).bindPopup("Lassi is a laid-back resort village known for its scenic beaches, popular in summer for sunbathing and water sports in a crystalline bay. To the west, quiet stretches of white sand flank the Lassi Caves.<br> <img src='https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1b/7e/66/62/caption.jpg?w=300&h=300&s=1'/>").on('click', onClick);
 
 //Gefyra Devosetou
 L.marker(center).addTo(map);
-L.marker([38.1748115,20.4937953]).addTo(map).on('mouseover', onMouseover).on('mouseout', onMouseout).on('click', onClick).bindPopup("The De Bosset Bridge (formerly Drapano Bridge) is a stone bridge built in 1813 over the bay of Argostoli in Kefalonia. At 689.9 meters, it is the longest stone bridge over the sea in the world.<br> <img src='https://lemoncars-kefalonia.com/images/discover-kefalonia/gefyra-deposet.jpg'/>");
+L.marker([38.1748115,20.4937953]).addTo(map).bindPopup("The De Bosset Bridge (formerly Drapano Bridge) is a stone bridge built in 1813 over the bay of Argostoli in Kefalonia. At 689.9 meters, it is the longest stone bridge over the sea in the world.<br> <img src='https://lemoncars-kefalonia.com/images/discover-kefalonia/gefyra-deposet.jpg'/>").on('click', onClick);
 
 
 //makris gyalos
 L.marker(center).addTo(map);
-L.marker([38.1516325,20.4797192],{icon: beachIcon}).addTo(map).on('mouseover', onMouseover).on('mouseout', onMouseout).on('click', onClick).bindPopup("This is Makris Giaolos. A sandy stretch of beach featuring calm aqua water, scenic views & comfy lounge chairs for rent.<br><img src='https://www.greekboston.com/wp-content/uploads/2017/07/Makris-Gialos-Beach-Kefalonia.jpg'/>");
+L.marker([38.1516325,20.4797192],{icon: beachIcon}).addTo(map).bindPopup("This is Makris Giaolos. A sandy stretch of beach featuring calm aqua water, scenic views & comfy lounge chairs for rent.<br><img src='https://www.greekboston.com/wp-content/uploads/2017/07/Makris-Gialos-Beach-Kefalonia.jpg'/>").on('click', onClick);
 
 //Paralia Xi
 L.marker(center).addTo(map);
-L.marker([38.1609161,20.4239988],{icon: beachIcon}).addTo(map).on('mouseover', onMouseover).on('mouseout', onMouseout).on('click', onClick).bindPopup("Xi is renowned for its soft, red sand. It is a Blue Flag beach.The sand slopes reasonably gently so that one can go out a distance from the shoreline.<br><img src='https://exploringgreece.tv/wp-content/uploads/2020/06/%CF%80%CE%B1%CF%81%CE%B1%CE%BB%CE%AF%CE%B1-%CE%9E%CE%B9.jpg'/>");
+L.marker([38.1609161,20.4239988],{icon: beachIcon}).addTo(map).bindPopup("Xi is renowned for its soft, red sand. It is a Blue Flag beach.The sand slopes reasonably gently so that one can go out a distance from the shoreline.<br><img src='https://exploringgreece.tv/wp-content/uploads/2020/06/%CF%80%CE%B1%CF%81%CE%B1%CE%BB%CE%AF%CE%B1-%CE%9E%CE%B9.jpg'/>").on('click', onClick);
 
 //Limani Porou Kefalonias
 L.marker(center).addTo(map);
-L.marker([38.147522,20.782988]).addTo(map).on('mouseover', onMouseover).on('mouseout', onMouseout).on('click', onClick).bindPopup("This is Poros Port. Travel by boat and enjoy a different kind of sea with its breeze and the enchanting blue of the sky above you.<br><img src='https://www.greece-ferries.com/wp-content/themes/greece-ferries-new/ports/img/default-port.jpg'/>");
+L.marker([38.147522,20.782988]).addTo(map).bindPopup("This is Poros Port. Travel by boat and enjoy a different kind of sea with its breeze and the enchanting blue of the sky above you.<br><img src='https://www.greece-ferries.com/wp-content/themes/greece-ferries-new/ports/img/default-port.jpg'/>").on('click', onClick);
 
 //Limani Samis
 L.marker(center).addTo(map);
-L.marker([38.2541974,20.6499078]).addTo(map).on('mouseover', onMouseover).on('mouseout', onMouseout).on('click', onClick).bindPopup("Sami (Greek: Σάμη) is a town and a municipality on the island of Cephalonia, Ionian Islands, Greece. Since the 2019 local government reform it is one of the three municipalities on the island.<br><img src='https://upload.wikimedia.org/wikipedia/commons/f/fa/Kefalonia_Fae087.jpg'/>");
+L.marker([38.2541974,20.6499078]).addTo(map).bindPopup("Sami (Greek: Σάμη) is a town and a municipality on the island of Cephalonia, Ionian Islands, Greece. Since the 2019 local government reform it is one of the three municipalities on the island.<br><img src='https://upload.wikimedia.org/wikipedia/commons/f/fa/Kefalonia_Fae087.jpg'/>").on('click', onClick);
 
 //Spilia Melissanis
 L.marker(center).addTo(map);
-L.marker([38.2595213,20.5488315]).addTo(map).on('mouseover', onMouseover).on('mouseout', onMouseout).on('click', onClick).bindPopup("In the cave of Melissani (or Cave of the Nymphs) finds were discovered depicting the god Pana and many nymphs. According to legend, it was at this point that Melissanthe, one of the nymphs, drowned after being rejected by the mythical god.<br><img src='https://i2.prth.gr/files/2017/05/10/ks/mel2.jpg'/>");
+L.marker([38.2595213,20.5488315]).addTo(map).bindPopup("In the cave of Melissani (or Cave of the Nymphs) finds were discovered depicting the god Pana and many nymphs. According to legend, it was at this point that Melissanthe, one of the nymphs, drowned after being rejected by the mythical god.<br><img src='https://i2.prth.gr/files/2017/05/10/ks/mel2.jpg'/>").on('click', onClick);
 
 //Faros Agiwn Theodorwn
 L.marker(center).addTo(map);
-L.marker([38.2667038,20.1184052]).addTo(map).on('mouseover', onMouseover).on('mouseout', onMouseout).on('click', onClick).bindPopup("One of the main attractions and trademarks of Argostoli is the lighthouse of Agios Theodoros, located on an artificial peninsula near the village of Argostoli. It offers not only a guiding light for incoming and outgoing ships, but also a classic, romantic spot for locals and visitors alike.<br><img src='https://ktelkefalonias.gr/images/touristikos-odigos-kefalonia/fanari.jpg'/>");
+L.marker([38.2667038,20.1184052]).addTo(map).bindPopup("One of the main attractions and trademarks of Argostoli is the lighthouse of Agios Theodoros, located on an artificial peninsula near the village of Argostoli. It offers not only a guiding light for incoming and outgoing ships, but also a classic, romantic spot for locals and visitors alike.<br><img src='https://ktelkefalonias.gr/images/touristikos-odigos-kefalonia/fanari.jpg'/>").on('click', onClick);
 
 //Paralia Petanoi
 L.marker(center).addTo(map);
-L.marker([38.2624156,20.3450875],{icon: beachIcon}).addTo(map).on('mouseover', onMouseover).on('mouseout', onMouseout).on('click', onClick).bindPopup("Petani is a magnificent beach located at a distance of 35 km west of Argostoli, the capital of Kefalonia, in the beautiful peninsula of Paliki. It consists of blue crystal waters and a stunning landscape of huge verdant cliffs that reach the blue sea. The water deepens right away and there are usually big waves in Petani. The beach is covered mostly with sand and some pebbles scattered along the shore. Close to the beach are a couple of taverns that will draw your attention. The beach is partially organized with umbrellas and sundecks..<br><img src='https://media-cdn.tripadvisor.com/media/photo-s/10/74/8d/a7/caption.jpg'/>");
+L.marker([38.2624156,20.3450875],{icon: beachIcon}).addTo(map).bindPopup("Petani is a magnificent beach located at a distance of 35 km west of Argostoli, the capital of Kefalonia, in the beautiful peninsula of Paliki. It consists of blue crystal waters and a stunning landscape of huge verdant cliffs that reach the blue sea. The water deepens right away and there are usually big waves in Petani. The beach is covered mostly with sand and some pebbles scattered along the shore. Close to the beach are a couple of taverns that will draw your attention. The beach is partially organized with umbrellas and sundecks..<br><img src='https://media-cdn.tripadvisor.com/media/photo-s/10/74/8d/a7/caption.jpg'/>").on('click', onClick);
 
 //Paralia Lourdata
 L.marker(center).addTo(map);
-L.marker([38.1211383,20.5817139],{icon: beachIcon}).addTo(map).on('mouseover', onMouseover).on('mouseout', onMouseout).on('click', onClick).bindPopup("In the southern part of Kefalonia, in the picturesque village of Lourdata, hidden and embraced by lush vegetation, is the beach of Lourdas. The slopes of Mount Ainos will be the backdrop for your dives, in a colorful landscape unlike any other.The beach is organized with deckchairs, umbrellas and facilities for water sports. If you fancy a coffee or a snack, you will find bars, taverns and mini markets at your disposal. At sunset, the horizon is painted with all shades of red and resembles a painting, offering an amazing view that reaches as far as the island of Zakynthos!.<br><img src='https://certs-it.com/wp-content/uploads/2019/02/lourdas-beach_kefalonia_certs-it_04.jpeg'/>");
+L.marker([38.1211383,20.5817139],{icon: beachIcon}).addTo(map).bindPopup("In the southern part of Kefalonia, in the picturesque village of Lourdata, hidden and embraced by lush vegetation, is the beach of Lourdas. The slopes of Mount Ainos will be the backdrop for your dives, in a colorful landscape unlike any other.The beach is organized with deckchairs, umbrellas and facilities for water sports. If you fancy a coffee or a snack, you will find bars, taverns and mini markets at your disposal. At sunset, the horizon is painted with all shades of red and resembles a painting, offering an amazing view that reaches as far as the island of Zakynthos!.<br><img src='https://certs-it.com/wp-content/uploads/2019/02/lourdas-beach_kefalonia_certs-it_04.jpeg'/>").on('click', onClick);
 
 
 
@@ -835,31 +834,31 @@ var icecreamIcon = L.icon({
 
 //Palia Plaka
 L.marker(center).addTo(map);
-L.marker([38.1855019,20.4846439], {icon: restaurantIcon}).addTo(map).on('mouseover', onMouseover).on('mouseout', onMouseout).on('click', onClick).bindPopup("Palia Plaka: Greek Restaurant.<br><img src='https://lh5.googleusercontent.com/p/AF1QipNdMNrGFiuRMYp4nRx9nuTUY28G7HAiri-vND2A=w424-h240-k-no'/>");
+L.marker([38.1855019,20.4846439], {icon: restaurantIcon}).addTo(map).bindPopup("Palia Plaka: Greek Restaurant.<br><img src='https://lh5.googleusercontent.com/p/AF1QipNdMNrGFiuRMYp4nRx9nuTUY28G7HAiri-vND2A=w424-h240-k-no'/>").on('click', onClick);
 
 //Vinaries tavern
 L.marker(center).addTo(map);
-L.marker([38.1905746,20.4798021], {icon: restaurantIcon}).addTo(map).on('mouseover', onMouseover).on('mouseout', onMouseout).on('click', onClick).bindPopup("Vinaries: Greek Tavern.<br><img src='https://lh5.googleusercontent.com/p/AF1QipOU1m7r8lMyHpvfSSqLdrfjidENAwa0d9LHxVGY=w426-h240-k-no'/>");
+L.marker([38.1905746,20.4798021], {icon: restaurantIcon}).addTo(map).bindPopup("Vinaries: Greek Tavern.<br><img src='https://lh5.googleusercontent.com/p/AF1QipOU1m7r8lMyHpvfSSqLdrfjidENAwa0d9LHxVGY=w426-h240-k-no'/>").on('click', onClick);
 
 //Baroque le Bistrot
 L.marker(center).addTo(map);
-L.marker([38.1784636,20.4882098], {icon: caffeIcon}).addTo(map).on('mouseover', onMouseover).on('mouseout', onMouseout).on('click', onClick).bindPopup("Baroque le bistrot: Cafe Bar.<br><img src='https://lh5.googleusercontent.com/p/AF1QipMfIODm9LVOng4FbOde0K2ghmcZ0jvqYMRyruSo=w408-h306-k-no'/>");
+L.marker([38.1784636,20.4882098], {icon: caffeIcon}).addTo(map).bindPopup("Baroque le bistrot: Cafe Bar.<br><img src='https://lh5.googleusercontent.com/p/AF1QipMfIODm9LVOng4FbOde0K2ghmcZ0jvqYMRyruSo=w408-h306-k-no'/>").on('click', onClick);
 
 //Soulatso Cafe
 L.marker(center).addTo(map);
-L.marker([38.1715644,20.4952281], {icon: caffeIcon}).addTo(map).on('mouseover', onMouseover).on('mouseout', onMouseout).on('click', onClick).bindPopup("Soulatso Cafe: Cafe.<br><img src='https://lh5.googleusercontent.com/p/AF1QipOb-xkPAB850JHjIRzVEJrbN4dD0gPIF3vAoof3=w408-h544-k-no'/>");
+L.marker([38.1715644,20.4952281], {icon: caffeIcon}).addTo(map).bindPopup("Soulatso Cafe: Cafe.<br><img src='https://lh5.googleusercontent.com/p/AF1QipOb-xkPAB850JHjIRzVEJrbN4dD0gPIF3vAoof3=w408-h544-k-no'/>").on('click', onClick);
 
 //Melograno Restaurant
 L.marker(center).addTo(map);
-L.marker([38.1795174,20.4874596], {icon: restaurantIcon}).addTo(map).on('mouseover', onMouseover).on('mouseout', onMouseout).on('click', onClick).bindPopup("Melograno Restaurant: Cafe.<br><img src='https://lh5.googleusercontent.com/p/AF1QipNiAWUeVPbFYOEl04bU1UrASoOY2gR5na7VNA3B=w408-h544-k-no'/>");
+L.marker([38.1795174,20.4874596], {icon: restaurantIcon}).addTo(map).bindPopup("Melograno Restaurant: Cafe.<br><img src='https://lh5.googleusercontent.com/p/AF1QipNiAWUeVPbFYOEl04bU1UrASoOY2gR5na7VNA3B=w408-h544-k-no'/>").on('click', onClick);
 
 //Pizza Al Forno
 L.marker(center).addTo(map);
-L.marker([38.1807845,20.4872819], {icon: pizzaIcon}).addTo(map).on('mouseover', onMouseover).on('mouseout', onMouseout).on('click', onClick).bindPopup("Pizza Al Forno: Pizza.<br><img src='https://lh5.googleusercontent.com/p/AF1QipMSkyIZwNwJW68TRdKw1Sa0oKHf-NRSK6jPkSXw=w408-h306-k-no'/>");
+L.marker([38.1807845,20.4872819], {icon: pizzaIcon}).addTo(map).bindPopup("Pizza Al Forno: Pizza.<br><img src='https://lh5.googleusercontent.com/p/AF1QipMSkyIZwNwJW68TRdKw1Sa0oKHf-NRSK6jPkSXw=w408-h306-k-no'/>").on('click', onClick);
 
 //Kappatos
 L.marker(center).addTo(map);
-L.marker([38.1731304,20.4926318], {icon: icecreamIcon}).addTo(map).on('mouseover', onMouseover).on('mouseout', onMouseout).on('click', onClick).bindPopup("Kappatos: Homemade icecream.<br><img src='https://lh5.googleusercontent.com/p/AF1QipNCWybofjEt-egIAttRfhOae4X0P2f6yO876fCJ=w408-h306-k-no'/>");
+L.marker([38.1731304,20.4926318], {icon: icecreamIcon}).addTo(map).bindPopup("Kappatos: Homemade icecream.<br><img src='https://lh5.googleusercontent.com/p/AF1QipNCWybofjEt-egIAttRfhOae4X0P2f6yO876fCJ=w408-h306-k-no'/>").on('click', onClick);
 
 
 
