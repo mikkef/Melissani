@@ -743,6 +743,14 @@ var beachIcon = L.icon({
     iconUrl: "https://img.icons8.com/external-smashingstocks-flat-smashing-stocks/256/external-beach-summer-party-smashingstocks-flat-smashing-stocks.png",
     iconSize:     [35, 35], // size of the icon
 });
+var currentZoomLevel = map.getZoom(); // Initialize variable with initial zoom level
+
+// Event listener for zoomend event
+map.on('zoomend', function() {
+    currentZoomLevel = map.getZoom(); // Update variable with current zoom level
+    console.log("Current zoom level: " + currentZoomLevel); // Output current zoom level to console (optional)
+});
+	
 //fiscardo beach
 //var imageUrl = "C:\Users\mikke\Desktop\Τριάντος_Νοικιαζόμενα\wheretostayinkefalonia.jpg";
 L.marker(center).addTo(map);
@@ -865,8 +873,12 @@ L.marker([38.1731304,20.4926318], {icon: icecreamIcon}).addTo(map).bindPopup("Ka
 
 function onClick(e) {
    // alert(this.e.latlng());
-	map.setView(new L.LatLng(e.latlng.lat, e.latlng.lng));
+
+	map.panTo(e.latlng);
+	map.setView(new L.LatLng(e.latlnge.latlng.lng, currentZoomLevel));
         this.openPopup();
+	//map.setView(new L.LatLng(e.latlng.lat, e.latlng.lng));
+        //this.openPopup();
 	
 }
 function onMouseover(e) {
