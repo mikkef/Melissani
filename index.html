@@ -319,9 +319,7 @@
 
 <!-- -->
 <br>
-<div class="container2">
-	
-		
+<div class="container2" id="servicesSection">	
 	<div class="body_text_center">
 	<div class="content_title_location">
 		<p> Services</p>
@@ -482,7 +480,7 @@
 
 
 
-<div class="content_title_gallery">
+<div class="content_title_gallery" id="gallerySection">
 	<p><i> Select Gallery</p>
 </div>
 
@@ -894,7 +892,7 @@ function onMouseout(e) {
 </script>
 
  <!-- Remove the container if you want to extend the Footer to full width. -->
-<div class = "content_title">
+<div class = "content_title" id="contactSection">
 <footer class="footer">
 <div class="container bottom_border">
 <div class="row">
@@ -1255,13 +1253,19 @@ function ScrollToLocation(){
    window.scrollTo(0, offset);
 }
 function ScrollToServices(){
-   window.scrollTo(0,1490);
+   var aboutSection = document.getElementById('servicesSection');
+   var offset = aboutSection.offsetTop;
+   window.scrollTo(0, offset);
 }
 function ScrollToGallery(){
-   window.scrollTo(0,1900);
+   var aboutSection = document.getElementById('gallerySection');
+   var offset = aboutSection.offsetTop;
+   window.scrollTo(0, offset);
 }
 function ScrollToContact(){
-   window.scrollTo(0,2300);
+   var aboutSection = document.getElementById('contactSection');
+   var offset = aboutSection.offsetTop;
+   window.scrollTo(0, offset);
 }
 
 
