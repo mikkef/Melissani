@@ -728,7 +728,7 @@ var kefaloniaBounds = L.latLngBounds(
 
 // add a marker in the given location
 L.marker(center).addTo(map);
-L.marker([38.1674996, 20.4924299]).addTo(map).bindPopup('<br>Hello, We are the Triantos family and we are happy to show you around!</br><br> Move your mouse over the labels to find information and a picture for each of our favourite places to visit in Kefalonia. </br> <br>Click to zoom to location. </br>')
+L.marker([38.1674996, 20.4924299]).addTo(map).bindPopup('<br>Hello, We are the Triantos family and we are happy to show you around!</br><br> Click the labels to find information and a picture for each of our favourite places to visit in Kefalonia. </br> <br>Click to zoom to location. </br>')
     .openPopup();
 
 //var imageUrl = 'https://t-cf.bstatic.com/xdata/images/hotel/max1024x768/178997172.jpg?k=22beab7e83b690f1fa53246e3c20f7ad2dbacb7553f1f2c5c53f7f16878de696&o=&hp=1',
@@ -876,7 +876,7 @@ function onClick(e) {
    // alert(this.e.latlng());
 
 	map.panTo(e.latlng);
-	map.setView(new L.LatLng(e.latlnge.latlng.lng, currentZoomLevel));
+	map.setView(new L.LatLng(e.latlng.lat + 0.001, e.latlng.lng), currentZoomLevel);
         this.openPopup();
 	//map.setView(new L.LatLng(e.latlng.lat, e.latlng.lng));
         //this.openPopup();
