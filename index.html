@@ -258,11 +258,11 @@
 </div>
 <br>
 
-<div class="container2">
+<div id="aboutSection" div class="container2">
 	
 <img src = "Photos_Kefalonia_Triantos\outside.jpg" ALIGN= "right" alt = "Melissani" width="600" height="400" />
 		
-	<div id="aboutSection" div class="body_text_left">
+	<div class="body_text_left">
 	<div class="content_title">
 		<p> About</p>
 	</div>
@@ -276,7 +276,7 @@
 
 <!-- -->
 
-<div class="container">
+<div id="locationSection" div class="container">
 	<div class="body_text_left">
 		<div class="content_title">
 			<p> Location</p>
@@ -1250,7 +1250,9 @@ function ScrollToAboutUs(){
    window.scrollTo(0, offset);
 }
 function ScrollToLocation(){
-   window.scrollTo(0,1060);
+   var aboutSection = document.getElementById('locationSection');
+   var offset = aboutSection.offsetTop;
+   window.scrollTo(0, offset);
 }
 function ScrollToServices(){
    window.scrollTo(0,1490);
